@@ -33,10 +33,10 @@ public class Marca extends GenericPage {
     }
 
     public void compareVisibleMessage() {
-        compareTexts(errorMessage, "Forcing error");
+        compareTexts(errorMessage, "Introduce un correo electrónico válido");
     }
 
-    public boolean isVisible() {
+    public boolean isErrorMessageVisible() {
         return errorMessage.isDisplayed();
     }
 }
