@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class Marca extends GenericPage {
 
-    @FindBy(id = "ue-accept-notice-button")
+    @FindBy(css = "button.box__btn[action-name='agreeAll']")
     WebElement acceptCookies;
 
     @FindBy(css = "a.tools-corporative-link[title='Login']")
