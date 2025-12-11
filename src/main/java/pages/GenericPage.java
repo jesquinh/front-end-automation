@@ -13,6 +13,7 @@ public class GenericPage extends FrontEndOperation{
 
     public GenericPage() {
         WebDriver driver = getDriver();
+        //driver.manage().window().maximize();
         initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(Constants.LOW_TIMEOUT)), this);
     }
 }
