@@ -1,5 +1,6 @@
 package scripts;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pages.Marca;
 
@@ -8,9 +9,13 @@ import static utilities.FrontEndOperation.checkThat;
 
 public class MarcaTest extends GenericTest<Marca> {
 
-    @Test
-    public void checkMessageVisibility() {
+    @BeforeEach
+    public void setup() {
         controller.acceptCookies();
+    }
+
+    @Test
+    public void checkLoginErrorMessage() {
         controller.fillLogin();
         checkThat("Comparing visible message", controller.isVisible(), is(true));
     }
