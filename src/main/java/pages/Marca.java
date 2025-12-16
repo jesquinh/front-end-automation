@@ -18,7 +18,7 @@ public class Marca extends GenericPage {
     WebElement nextButton;
 
     @FindBy(id = "mat-mdc-error-0")
-    private WebElement errorMessage;
+    WebElement errorMessage;
 
     public void acceptCookies() {
         if (isVisible(acceptCookies)) {
